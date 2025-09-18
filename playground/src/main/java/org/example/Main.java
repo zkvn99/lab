@@ -1,19 +1,14 @@
 package org.example;
 
+import java.util.HashMap;
 import org.example.study.week1.question1.Bike;
 import org.example.study.week1.question1.Car;
 import org.example.study.week1.question1.Vehicle;
+import org.example.study.week1.question5.Book;
 
 public class Main {
     public static void main(String[] args) {
-        Vehicle[] vehicles = new Vehicle[2];
-
-        vehicles[0] = new Car("KIA");
-        vehicles[1] = new Bike("HONDA");
-
-        for (Vehicle vehicle : vehicles) {
-            System.out.println(vehicle.toString());
-            vehicle.move();
-        }
+        HashMap<String, Book> books = new HashMap<>();
+        books.put("book1", new Book("book1", "book 1"));
     }
 }
