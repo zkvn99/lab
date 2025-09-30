@@ -29,7 +29,7 @@ public class Member {
     return sequence;
   }
 
-  @Override
+
   public String toString() {
     return "Member{" +
         "age=" + age +
